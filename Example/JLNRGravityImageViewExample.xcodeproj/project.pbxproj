@@ -13,18 +13,8 @@
 		D4ACEBD51A938F4300F0256F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD31A938F4300F0256F /* Main.storyboard */; };
 		D4ACEBD71A938F4300F0256F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD61A938F4300F0256F /* Images.xcassets */; };
 		D4ACEBDA1A938F4300F0256F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD81A938F4300F0256F /* LaunchScreen.xib */; };
-		D4ACEBE61A938F4400F0256F /* JLNRGravityImageViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBE51A938F4400F0256F /* JLNRGravityImageViewExampleTests.m */; };
+		D4ACEBF11A938FC400F0256F /* JLNRGravityImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D4ACEBE01A938F4400F0256F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4ACEBBE1A938F4300F0256F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4ACEBC51A938F4300F0256F;
-			remoteInfo = JLNRGravityImageViewExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLNRGravityImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +27,14 @@
 		D4ACEBD41A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4ACEBD61A938F4300F0256F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4ACEBD91A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D4ACEBDF1A938F4400F0256F /* JLNRGravityImageViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLNRGravityImageViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ACEBE41A938F4400F0256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4ACEBE51A938F4400F0256F /* JLNRGravityImageViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLNRGravityImageViewExampleTests.m; sourceTree = "<group>"; };
+		D4ACEBEF1A938FC400F0256F /* JLNRGravityImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLNRGravityImageView.h; path = ../JLNRGravityImageView.h; sourceTree = "<group>"; };
+		D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNRGravityImageView.m; path = ../JLNRGravityImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D4ACEBC31A938F4300F0256F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4ACEBDC1A938F4400F0256F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,7 +47,8 @@
 		D4ACEBBD1A938F4300F0256F = {
 			isa = PBXGroup;
 			children = (
-				D4ACEBC81A938F4300F0256F /* JLNRGravityImageViewExample */,
+				D4ACEBC81A938F4300F0256F /* Example */,
+				D4ACEBF21A938FCA00F0256F /* JLNRGravityImageView */,
 				D4ACEBE21A938F4400F0256F /* JLNRGravityImageViewExampleTests */,
 				D4ACEBC71A938F4300F0256F /* Products */,
 			);
@@ -73,24 +58,23 @@
 			isa = PBXGroup;
 			children = (
 				D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */,
-				D4ACEBDF1A938F4400F0256F /* JLNRGravityImageViewExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4ACEBC81A938F4300F0256F /* JLNRGravityImageViewExample */ = {
+		D4ACEBC81A938F4300F0256F /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				D4ACEBCD1A938F4300F0256F /* AppDelegate.h */,
 				D4ACEBCE1A938F4300F0256F /* AppDelegate.m */,
-				D4ACEBD01A938F4300F0256F /* ViewController.h */,
-				D4ACEBD11A938F4300F0256F /* ViewController.m */,
-				D4ACEBD31A938F4300F0256F /* Main.storyboard */,
 				D4ACEBD61A938F4300F0256F /* Images.xcassets */,
 				D4ACEBD81A938F4300F0256F /* LaunchScreen.xib */,
+				D4ACEBD31A938F4300F0256F /* Main.storyboard */,
 				D4ACEBC91A938F4300F0256F /* Supporting Files */,
+				D4ACEBD01A938F4300F0256F /* ViewController.h */,
+				D4ACEBD11A938F4300F0256F /* ViewController.m */,
 			);
-			path = JLNRGravityImageViewExample;
+			name = Example;
 			sourceTree = "<group>";
 		};
 		D4ACEBC91A938F4300F0256F /* Supporting Files */ = {
@@ -119,6 +103,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D4ACEBF21A938FCA00F0256F /* JLNRGravityImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D4ACEBEF1A938FC400F0256F /* JLNRGravityImageView.h */,
+				D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */,
+			);
+			name = JLNRGravityImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +132,6 @@
 			productReference = D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4ACEBDE1A938F4400F0256F /* JLNRGravityImageViewExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4ACEBEC1A938F4400F0256F /* Build configuration list for PBXNativeTarget "JLNRGravityImageViewExampleTests" */;
-			buildPhases = (
-				D4ACEBDB1A938F4400F0256F /* Sources */,
-				D4ACEBDC1A938F4400F0256F /* Frameworks */,
-				D4ACEBDD1A938F4400F0256F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4ACEBE11A938F4400F0256F /* PBXTargetDependency */,
-			);
-			name = JLNRGravityImageViewExampleTests;
-			productName = JLNRGravityImageViewExampleTests;
-			productReference = D4ACEBDF1A938F4400F0256F /* JLNRGravityImageViewExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +143,6 @@
 				TargetAttributes = {
 					D4ACEBC51A938F4300F0256F = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					D4ACEBDE1A938F4400F0256F = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = D4ACEBC51A938F4300F0256F;
 					};
 				};
 			};
@@ -189,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				D4ACEBC51A938F4300F0256F /* JLNRGravityImageViewExample */,
-				D4ACEBDE1A938F4400F0256F /* JLNRGravityImageViewExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4ACEBDD1A938F4400F0256F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,26 +185,11 @@
 				D4ACEBD21A938F4300F0256F /* ViewController.m in Sources */,
 				D4ACEBCF1A938F4300F0256F /* AppDelegate.m in Sources */,
 				D4ACEBCC1A938F4300F0256F /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4ACEBDB1A938F4400F0256F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4ACEBE61A938F4400F0256F /* JLNRGravityImageViewExampleTests.m in Sources */,
+				D4ACEBF11A938FC400F0256F /* JLNRGravityImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D4ACEBE11A938F4400F0256F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D4ACEBC51A938F4300F0256F /* JLNRGravityImageViewExample */;
-			targetProxy = D4ACEBE01A938F4400F0256F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D4ACEBD31A938F4300F0256F /* Main.storyboard */ = {
@@ -297,8 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -332,8 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JLNRGravityImageViewExample/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,43 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JLNRGravityImageViewExample/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D4ACEBED1A938F4400F0256F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JLNRGravityImageViewExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLNRGravityImageViewExample.app/JLNRGravityImageViewExample";
-			};
-			name = Debug;
-		};
-		D4ACEBEE1A938F4400F0256F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JLNRGravityImageViewExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLNRGravityImageViewExample.app/JLNRGravityImageViewExample";
 			};
 			name = Release;
 		};
@@ -412,14 +324,7 @@
 				D4ACEBEB1A938F4400F0256F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D4ACEBEC1A938F4400F0256F /* Build configuration list for PBXNativeTarget "JLNRGravityImageViewExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4ACEBED1A938F4400F0256F /* Debug */,
-				D4ACEBEE1A938F4400F0256F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
