@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "../JLNRGravityImageView.h"
+#import "../Classes/JLNRGravityImageView.h"
 
 
 @interface ViewController () <UIScrollViewDelegate>

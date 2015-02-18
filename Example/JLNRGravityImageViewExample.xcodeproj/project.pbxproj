@@ -13,7 +13,7 @@
 		D4ACEBD51A938F4300F0256F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD31A938F4300F0256F /* Main.storyboard */; };
 		D4ACEBD71A938F4300F0256F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD61A938F4300F0256F /* Images.xcassets */; };
 		D4ACEBDA1A938F4300F0256F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD81A938F4300F0256F /* LaunchScreen.xib */; };
-		D4ACEBF11A938FC400F0256F /* JLNRGravityImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */; };
+		D4ACEBF61A9486C400F0256F /* JLNRGravityImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +27,8 @@
 		D4ACEBD41A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4ACEBD61A938F4300F0256F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4ACEBD91A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D4ACEBE41A938F4400F0256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4ACEBE51A938F4400F0256F /* JLNRGravityImageViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLNRGravityImageViewExampleTests.m; sourceTree = "<group>"; };
-		D4ACEBEF1A938FC400F0256F /* JLNRGravityImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLNRGravityImageView.h; path = ../JLNRGravityImageView.h; sourceTree = "<group>"; };
-		D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNRGravityImageView.m; path = ../JLNRGravityImageView.m; sourceTree = "<group>"; };
+		D4ACEBF41A9486C400F0256F /* JLNRGravityImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNRGravityImageView.h; sourceTree = "<group>"; };
+		D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNRGravityImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				D4ACEBC81A938F4300F0256F /* Example */,
-				D4ACEBF21A938FCA00F0256F /* JLNRGravityImageView */,
-				D4ACEBE21A938F4400F0256F /* JLNRGravityImageViewExampleTests */,
+				D4ACEBF31A9486C400F0256F /* JLNRGravityImageView */,
 				D4ACEBC71A938F4300F0256F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,30 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D4ACEBE21A938F4400F0256F /* JLNRGravityImageViewExampleTests */ = {
+		D4ACEBF31A9486C400F0256F /* JLNRGravityImageView */ = {
 			isa = PBXGroup;
 			children = (
-				D4ACEBE51A938F4400F0256F /* JLNRGravityImageViewExampleTests.m */,
-				D4ACEBE31A938F4400F0256F /* Supporting Files */,
-			);
-			path = JLNRGravityImageViewExampleTests;
-			sourceTree = "<group>";
-		};
-		D4ACEBE31A938F4400F0256F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4ACEBE41A938F4400F0256F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D4ACEBF21A938FCA00F0256F /* JLNRGravityImageView */ = {
-			isa = PBXGroup;
-			children = (
-				D4ACEBEF1A938FC400F0256F /* JLNRGravityImageView.h */,
-				D4ACEBF01A938FC400F0256F /* JLNRGravityImageView.m */,
+				D4ACEBF41A9486C400F0256F /* JLNRGravityImageView.h */,
+				D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */,
 			);
 			name = JLNRGravityImageView;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +166,7 @@
 				D4ACEBD21A938F4300F0256F /* ViewController.m in Sources */,
 				D4ACEBCF1A938F4300F0256F /* AppDelegate.m in Sources */,
 				D4ACEBCC1A938F4300F0256F /* main.m in Sources */,
-				D4ACEBF11A938FC400F0256F /* JLNRGravityImageView.m in Sources */,
+				D4ACEBF61A9486C400F0256F /* JLNRGravityImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
