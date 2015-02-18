@@ -10,14 +10,34 @@
 #import "../JLNRGravityImageView.h"
 
 
-@interface ViewController ()
+@interface ViewController () <UIScrollViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet JLNRGravityImageView *imageView;
 
 @end
 
 
 @implementation ViewController
+
+#pragma mark - UIViewController
+
+- (void)viewDidLayoutSubviews
+{
+    CGSize scrollViewSize = self.scrollView.frame.size;
+    self.scrollView.contentSize = CGSizeMake(scrollViewSize.width * 1.7, scrollViewSize.height * 1.7);
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint offset = self.scrollView.contentOffset;
+    CGSize scrollViewSize = self.scrollView.frame.size;
+    self.imageView.frame = CGRectMake(offset.x, offset.y, scrollViewSize.width - offset.x, scrollViewSize.height - offset.y);
+}
+
+#pragma mark - IBActions
 
 - (IBAction)changeHorizontalAlignment:(UISegmentedControl *)segmentedControl
 {
@@ -29,13 +49,6 @@
 {
     self.imageView.alignTop = (segmentedControl.selectedSegmentIndex == 0);
     self.imageView.alignBottom = (segmentedControl.selectedSegmentIndex == 2);
-}
-
-- (IBAction)sliderValueDidChange:(UISlider *)slider
-{
-    CGRect imageFrame = self.imageView.frame;
-    imageFrame.size.width = slider.frame.size.width * slider.value;
-    self.imageView.frame = imageFrame;
 }
 
 @end
