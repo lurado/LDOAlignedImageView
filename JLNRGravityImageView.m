@@ -27,9 +27,9 @@
     [self calculateContentsRect];
 }
 
-- (void)setAlignLeft:(BOOL)alignRight
+- (void)setAlignLeft:(BOOL)alignLeft
 {
-    _alignRight = alignRight;
+    _alignLeft = alignLeft;
     
     [self calculateContentsRect];
 }
@@ -66,16 +66,29 @@
         return;
     }
     
-    CGSize imageSize = self.image.size; // 1337x999
-    CGSize frameSize = self.frame.size; // 288x381
-    
-    CGFloat scaleFactor = MAX(frameSize.width / imageSize.width, frameSize.height / imageSize.height); // MAX(0.215, 0.381) = 0.381
-    
+    CGSize imageSize = self.image.size;
+    CGSize frameSize = self.frame.size;
+    CGFloat scaleFactor = MAX(frameSize.width / imageSize.width, frameSize.height / imageSize.height);
     CGSize scaledImageSize = CGSizeMake(imageSize.width * scaleFactor, imageSize.height * scaleFactor);
     
-    if (self.alignRight) {
-        CGFloat newScaledImageWidth = scaledImageSize.width + (scaledImageSize.width - frameSize.width);
-        contentsRect.size.width = newScaledImageWidth / scaledImageSize.width;
+    if (self.alignTop && self.alignBottom) {
+        // Do nothing if both flags are set, i.e. keep the image centred
+    }
+    else if (self.alignTop || self.alignBottom) {
+        contentsRect.size.height = 2 - frameSize.height / scaledImageSize.height;
+        if (self.alignTop) {
+            contentsRect.origin.y = 1 - contentsRect.size.height;
+        }
+    }
+    
+    if (self.alignLeft && self.alignRight) {
+        // Do nothing if both flags are set, i.e. keep the image centred
+    }
+    else if (self.alignLeft || self.alignRight) {
+        contentsRect.size.width = 2 - frameSize.width / scaledImageSize.width;
+        if (self.alignLeft) {
+            contentsRect.origin.x = 1 - contentsRect.size.width;
+        }
     }
     
     self.layer.contentsRect = contentsRect;
