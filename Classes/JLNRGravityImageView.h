@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
+// IB_DESIGNABLE does not work by default with CocoaPods:
+// https://github.com/CocoaPods/CocoaPods/issues/2792
+#ifndef COCOAPODS
 IB_DESIGNABLE
+#endif
 @interface JLNRGravityImageView : UIImageView
 
 @property (nonatomic) IBInspectable BOOL alignTop;
