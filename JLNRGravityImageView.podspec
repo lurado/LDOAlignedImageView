@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JLNRGravityImageView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UIImageView subclass that pins image edges to view edges in AspectFill mode"
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Julian Raschke" => "julian@raschke.de" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/jlnr/JLNRGravityImageView.git", :tag => "v1.0.0" }
+  s.source       = { :git => "https://github.com/jlnr/JLNRGravityImageView.git", :tag => "v1.0.1" }
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.requires_arc = true
 end
