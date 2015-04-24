@@ -32,7 +32,7 @@ You can simply copy the two files in `Classes` into your project, but the easies
 
 ```ruby
 platform :ios, '7.0'
-pod "JLNRGravityImageView", :git => "https://github.com/jlnr/JLNRGravityImageView"
+pod "JLNRGravityImageView"
 ```
 
 ## License
