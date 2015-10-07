@@ -11,13 +11,13 @@
 		D4ACEBCF1A938F4300F0256F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBCE1A938F4300F0256F /* AppDelegate.m */; };
 		D4ACEBD21A938F4300F0256F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBD11A938F4300F0256F /* ViewController.m */; };
 		D4ACEBD51A938F4300F0256F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD31A938F4300F0256F /* Main.storyboard */; };
-		D4ACEBD71A938F4300F0256F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD61A938F4300F0256F /* Images.xcassets */; };
 		D4ACEBDA1A938F4300F0256F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACEBD81A938F4300F0256F /* LaunchScreen.xib */; };
-		D4ACEBF61A9486C400F0256F /* JLNRGravityImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */; };
+		D4DA68801BC5CE9000931F0F /* LDOAlignedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DA687F1BC5CE9000931F0F /* LDOAlignedImageView.m */; settings = {ASSET_TAGS = (); }; };
+		D4EA2FEC1BC5D3BC0029E3C4 /* Facepalm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4EA2FEB1BC5D3BC0029E3C4 /* Facepalm.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLNRGravityImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4ACEBC61A938F4300F0256F /* LDOAlignedImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDOAlignedImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ACEBCA1A938F4300F0256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4ACEBCB1A938F4300F0256F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4ACEBCD1A938F4300F0256F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -25,10 +25,10 @@
 		D4ACEBD01A938F4300F0256F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D4ACEBD11A938F4300F0256F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D4ACEBD41A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D4ACEBD61A938F4300F0256F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4ACEBD91A938F4300F0256F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D4ACEBF41A9486C400F0256F /* JLNRGravityImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNRGravityImageView.h; sourceTree = "<group>"; };
-		D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNRGravityImageView.m; sourceTree = "<group>"; };
+		D4DA687E1BC5CE9000931F0F /* LDOAlignedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDOAlignedImageView.h; sourceTree = "<group>"; };
+		D4DA687F1BC5CE9000931F0F /* LDOAlignedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDOAlignedImageView.m; sourceTree = "<group>"; };
+		D4EA2FEB1BC5D3BC0029E3C4 /* Facepalm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Facepalm.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				D4ACEBC81A938F4300F0256F /* Example */,
-				D4ACEBF31A9486C400F0256F /* JLNRGravityImageView */,
+				D4ACEBF31A9486C400F0256F /* LDOAlignedImageView */,
 				D4ACEBC71A938F4300F0256F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,7 +54,7 @@
 		D4ACEBC71A938F4300F0256F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */,
+				D4ACEBC61A938F4300F0256F /* LDOAlignedImageViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +64,7 @@
 			children = (
 				D4ACEBCD1A938F4300F0256F /* AppDelegate.h */,
 				D4ACEBCE1A938F4300F0256F /* AppDelegate.m */,
-				D4ACEBD61A938F4300F0256F /* Images.xcassets */,
+				D4EA2FEB1BC5D3BC0029E3C4 /* Facepalm.jpg */,
 				D4ACEBD81A938F4300F0256F /* LaunchScreen.xib */,
 				D4ACEBD31A938F4300F0256F /* Main.storyboard */,
 				D4ACEBC91A938F4300F0256F /* Supporting Files */,
@@ -83,22 +83,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D4ACEBF31A9486C400F0256F /* JLNRGravityImageView */ = {
+		D4ACEBF31A9486C400F0256F /* LDOAlignedImageView */ = {
 			isa = PBXGroup;
 			children = (
-				D4ACEBF41A9486C400F0256F /* JLNRGravityImageView.h */,
-				D4ACEBF51A9486C400F0256F /* JLNRGravityImageView.m */,
+				D4DA687E1BC5CE9000931F0F /* LDOAlignedImageView.h */,
+				D4DA687F1BC5CE9000931F0F /* LDOAlignedImageView.m */,
 			);
-			name = JLNRGravityImageView;
+			name = LDOAlignedImageView;
 			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4ACEBC51A938F4300F0256F /* JLNRGravityImageViewExample */ = {
+		D4ACEBC51A938F4300F0256F /* LDOAlignedImageViewExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4ACEBE91A938F4400F0256F /* Build configuration list for PBXNativeTarget "JLNRGravityImageViewExample" */;
+			buildConfigurationList = D4ACEBE91A938F4400F0256F /* Build configuration list for PBXNativeTarget "LDOAlignedImageViewExample" */;
 			buildPhases = (
 				D4ACEBC21A938F4300F0256F /* Sources */,
 				D4ACEBC31A938F4300F0256F /* Frameworks */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = JLNRGravityImageViewExample;
-			productName = JLNRGravityImageViewExample;
-			productReference = D4ACEBC61A938F4300F0256F /* JLNRGravityImageViewExample.app */;
+			name = LDOAlignedImageViewExample;
+			productName = LDOAlignedImageViewExample;
+			productReference = D4ACEBC61A938F4300F0256F /* LDOAlignedImageViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 		D4ACEBBE1A938F4300F0256F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Julian Raschke";
 				TargetAttributes = {
 					D4ACEBC51A938F4300F0256F = {
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4ACEBC11A938F4300F0256F /* Build configuration list for PBXProject "JLNRGravityImageViewExample" */;
+			buildConfigurationList = D4ACEBC11A938F4300F0256F /* Build configuration list for PBXProject "LDOAlignedImageViewExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4ACEBC51A938F4300F0256F /* JLNRGravityImageViewExample */,
+				D4ACEBC51A938F4300F0256F /* LDOAlignedImageViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -152,7 +152,7 @@
 			files = (
 				D4ACEBD51A938F4300F0256F /* Main.storyboard in Resources */,
 				D4ACEBDA1A938F4300F0256F /* LaunchScreen.xib in Resources */,
-				D4ACEBD71A938F4300F0256F /* Images.xcassets in Resources */,
+				D4EA2FEC1BC5D3BC0029E3C4 /* Facepalm.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4ACEBD21A938F4300F0256F /* ViewController.m in Sources */,
+				D4DA68801BC5CE9000931F0F /* LDOAlignedImageView.m in Sources */,
 				D4ACEBCF1A938F4300F0256F /* AppDelegate.m in Sources */,
 				D4ACEBCC1A938F4300F0256F /* main.m in Sources */,
-				D4ACEBF61A9486C400F0256F /* JLNRGravityImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +212,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -226,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -260,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -272,7 +273,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lurado.LDOAlignedImageViewExample;
+				PRODUCT_NAME = LDOAlignedImageViewExample;
 			};
 			name = Debug;
 		};
@@ -282,14 +284,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lurado.LDOAlignedImageViewExample;
+				PRODUCT_NAME = LDOAlignedImageViewExample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4ACEBC11A938F4300F0256F /* Build configuration list for PBXProject "JLNRGravityImageViewExample" */ = {
+		D4ACEBC11A938F4300F0256F /* Build configuration list for PBXProject "LDOAlignedImageViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4ACEBE71A938F4400F0256F /* Debug */,
@@ -298,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4ACEBE91A938F4400F0256F /* Build configuration list for PBXNativeTarget "JLNRGravityImageViewExample" */ = {
+		D4ACEBE91A938F4400F0256F /* Build configuration list for PBXNativeTarget "LDOAlignedImageViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4ACEBEA1A938F4400F0256F /* Debug */,

@@ -1,19 +1,19 @@
 //
 //  ViewController.m
-//  JLNRGravityImageViewExample
+//  LDOAlignedImageViewExample
 //
 //  Created by Julian Raschke on 17.02.15.
-//  Copyright (c) 2015 Julian Raschke. All rights reserved.
+//  Copyright (c) 2015 Julian Raschke und Sebastian Ludwig GbR. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "../Classes/JLNRGravityImageView.h"
+#import "../Classes/LDOAlignedImageView.h"
 
 
 @interface ViewController () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet JLNRGravityImageView *imageView;
+@property (weak, nonatomic) IBOutlet LDOAlignedImageView *imageView;
 
 @end
 
